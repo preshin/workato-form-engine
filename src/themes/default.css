@@ -1,0 +1,11 @@
+/*
+ * Default theme for @workato/form-engine
+ *
+ * This imports formio's self-contained CSS which includes all necessary
+ * styles for form rendering. No external framework (antd, Bootstrap, etc.)
+ * is required.
+ *
+ * Usage:
+ *   import '@workato/form-engine/themes/default.css';
+ */
+@import 'formiojs/dist/formio.full.css';
