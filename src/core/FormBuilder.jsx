@@ -67,7 +67,11 @@ const FormBuilder = ({
         builderRef.current = null;
       }
     };
-  }, [form?.display, form?.components, options]);
+    // Only re-initialize when form display mode changes.
+    // Options and callbacks are captured via refs/closures — no need to re-create
+    // the builder when they change (matches original @converselabs behavior).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [form?.display]);
 
   return (
     <div ref={elementRef}>

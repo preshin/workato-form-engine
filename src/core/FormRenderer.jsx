@@ -1,5 +1,5 @@
 import { useRef, useEffect, useImperativeHandle, forwardRef, useContext } from 'react';
-import { Form as FormioForm } from 'formiojs/Form';
+import FormioForm from 'formiojs/Form';
 import Components from 'formiojs/components/Components';
 import components from 'formiojs/components';
 import { FormEngineContext } from './FormEngineProvider';
