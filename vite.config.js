@@ -7,11 +7,19 @@ export default defineConfig(({ command }) => {
   if (command === 'serve') {
     return {
       plugins: [react()],
+      // Handle JSX in .js files (our source uses .js with JSX)
+      esbuild: {
+        loader: 'jsx',
+        include: /\.js$/,
+      },
       // optimizeDeps needed because formiojs is CJS
       optimizeDeps: {
         include: ['formiojs', 'formiojs/Form', 'formiojs/FormBuilder',
                   'formiojs/components', 'formiojs/components/Components',
                   'formiojs/components/_classes/field/Field'],
+        esbuildOptions: {
+          loader: { '.js': 'jsx' },
+        },
       },
     };
   }
@@ -28,7 +36,6 @@ export default defineConfig(({ command }) => {
       },
       rollupOptions: {
         // Externalize react, react-dom, and all formiojs imports
-        // formiojs is a dependency - consumer's bundler resolves it from node_modules
         external: (id) => {
           if (id === 'react' || id === 'react-dom' || id.startsWith('react-dom/')) return true;
           if (id === 'formiojs' || id.startsWith('formiojs/')) return true;
