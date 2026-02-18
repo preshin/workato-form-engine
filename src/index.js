@@ -9,6 +9,11 @@ export { FormEngineContext } from './core/FormEngineProvider';
 export { createFormComponent } from './core/createFormComponent';
 export { registerComponent } from './core/registry';
 
+// Re-export ReactComponent from formiojs for backward compatibility with
+// custom components that extend it (ColorPicker, AceEditor, etc.).
+// New custom components should use createFormComponent() instead.
+export { default as ReactComponent } from 'formiojs/components/_classes/field/Field';
+
 // Form schema helpers
 export { removeSubmitFormio, removeAutoFocusFormio } from './utils/helpers';
 
