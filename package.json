@@ -1,5 +1,5 @@
 {
-  "name": "@workato/form-engine",
+  "name": "@workato/react-formio-engine",
   "version": "1.0.0",
   "description": "Form engine with builder and renderer - formiojs-powered with React functional components",
   "type": "module",
