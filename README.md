@@ -1,17 +1,17 @@
-# @preshin/react-formio-engine
+# react-formio-engine
 
 React functional components for form rendering and building, powered by [formiojs](https://github.com/formio/formio.js). Drop-in replacement for `@formio/react` and `@converselabs/react-formio` with no class components.
 
 ## Install
 
 ```bash
-npm install @preshin/react-formio-engine
+npm install react-formio-engine
 ```
 
 ## Quick Start
 
 ```jsx
-import { Form } from '@preshin/react-formio-engine';
+import { Form } from 'react-formio-engine';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'formiojs/dist/formio.full.css';
 
@@ -47,7 +47,7 @@ function App() {
 ## Form Renderer
 
 ```jsx
-import { Form } from '@preshin/react-formio-engine';
+import { Form } from 'react-formio-engine';
 
 <Form
   src={formSchema}                    // Form JSON schema
@@ -62,7 +62,7 @@ import { Form } from '@preshin/react-formio-engine';
 ## Form Builder
 
 ```jsx
-import { FormBuilder } from '@preshin/react-formio-engine';
+import { FormBuilder } from 'react-formio-engine';
 
 <FormBuilder
   form={{ display: 'form', components: [] }}
@@ -83,7 +83,7 @@ import { FormBuilder } from '@preshin/react-formio-engine';
 ## Custom Components
 
 ```jsx
-import { createFormComponent, registerComponent, Formio } from '@preshin/react-formio-engine';
+import { createFormComponent, Formio } from 'react-formio-engine';
 
 const MyColorPicker = createFormComponent({
   type: 'colorpicker',
@@ -101,7 +101,7 @@ Formio.registerComponent('colorpicker', MyColorPicker);
 ## Theme Provider
 
 ```jsx
-import { FormEngineProvider, Form } from '@preshin/react-formio-engine';
+import { FormEngineProvider, Form } from 'react-formio-engine';
 
 <FormEngineProvider theme="antd">
   <Form src={schema} />
