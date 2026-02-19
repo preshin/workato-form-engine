@@ -44,6 +44,14 @@
     "formiojs",
     "functional-components"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/preshin/react-formio-engine.git"
+  },
+  "homepage": "https://github.com/preshin/react-formio-engine#readme",
+  "bugs": {
+    "url": "https://github.com/preshin/react-formio-engine/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "formiojs": "^4.21.7"
