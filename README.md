@@ -114,6 +114,10 @@ import { FormEngineProvider, Form } from 'react-formio-engine';
 - `ReactComponent` and `baseEditForm` re-exported for existing custom components
 - Drop-in API compatible with `@formio/react`
 
+## Keywords
+
+`react` `formio` `form-builder` `form-renderer` `json-schema-form` `drag-and-drop` `form-engine` `formiojs` `functional-components`
+
 ## License
 
 MIT

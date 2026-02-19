@@ -33,6 +33,17 @@
     "react-dom": "^18.3.1",
     "vite": "^7.3.1"
   },
+  "keywords": [
+    "react",
+    "formio",
+    "form-builder",
+    "form-renderer",
+    "json-schema-form",
+    "drag-and-drop",
+    "form-engine",
+    "formiojs",
+    "functional-components"
+  ],
   "license": "MIT",
   "dependencies": {
     "formiojs": "^4.21.7"
