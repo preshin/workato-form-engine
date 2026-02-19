@@ -1,6 +1,6 @@
 # react-formio-engine
 
-React functional components for form rendering and building, powered by [formiojs](https://github.com/formio/formio.js). Drop-in replacement for `@formio/react` and `@converselabs/react-formio` with no class components.
+React functional components for form rendering and building, powered by [formiojs](https://github.com/formio/formio.js). Drop-in replacement for `@formio/react` with no class components.
 
 ## Install
 
@@ -112,7 +112,7 @@ import { FormEngineProvider, Form } from 'react-formio-engine';
 
 - Supports the same JSON schema format as formio.js v4
 - `ReactComponent` and `baseEditForm` re-exported for existing custom components
-- Drop-in API compatible with `@converselabs/react-formio`
+- Drop-in API compatible with `@formio/react`
 
 ## License
 
