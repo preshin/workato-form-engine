@@ -7,10 +7,10 @@ export default defineConfig(({ command }) => {
   if (command === 'serve') {
     return {
       plugins: [react()],
-      // Handle JSX in .js files (our source uses .js with JSX)
+      // Handle JSX in .js and .jsx files
       esbuild: {
         loader: 'jsx',
-        include: /\.js$/,
+        include: /\.jsx?$/,
       },
       // optimizeDeps needed because formiojs is CJS
       optimizeDeps: {
