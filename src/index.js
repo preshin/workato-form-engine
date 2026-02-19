@@ -14,6 +14,9 @@ export { registerComponent } from './core/registry';
 // New custom components should use createFormComponent() instead.
 export { default as ReactComponent } from 'formiojs/components/_classes/field/Field';
 
+// Re-export baseEditForm for custom component settings forms
+export { default as baseEditForm } from 'formiojs/components/_classes/component/Component.form';
+
 // Form schema helpers
 export { removeSubmitFormio, removeAutoFocusFormio } from './utils/helpers';
 
